@@ -9,8 +9,8 @@ public class JavaHomework {
 
         System.out.println("My name is " + name + " and I am " + age + " years old.");
 
-        int something;
+        // int something;
 
-        System.out.println("Print something " + something);
+        // System.out.println("Print something " + something);
     }
 }
