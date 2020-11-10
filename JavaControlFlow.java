@@ -33,7 +33,7 @@ public class JavaControlFlow {
                 System.out.println("Do you have a red car? yes or no");
                 redCar = scanner.next();
 
-                while (!redCar.equalsIgnoreCase("yes") || !redCar.equalsIgnoreCase("no"))
+                while (!redCar.equalsIgnoreCase("yes") && !redCar.equalsIgnoreCase("no"))
                 {
                     System.out.println("Please enter yes or no: ");
                     redCar = scanner.next();
@@ -64,6 +64,10 @@ public class JavaControlFlow {
 
                 System.out.println("Enter a random number between 1 - 50");
                 randomNumber = scanner.nextInt();
+                while (randomNumber > 50 || randomNumber < 1){
+                    System.out.println("Try again, enter a random number between 1 and 50");
+                    randomNumber = scanner.nextInt();
+                }
 
                 magicBall = luckyNumber * randomNumber;
                 if (magicBall > 75){
@@ -76,12 +80,21 @@ public class JavaControlFlow {
                 }
 
                 lotteryNumber2 = jerseyNumber + age + luckyNumber;
+                if (lotteryNumber2 > 65){
+                    lotteryNumber2 = lotteryNumber2 - 65;
+                }
 
                 lotteryNumber3 = age + modelYear;
+                if (lotteryNumber3 > 65){
+                    lotteryNumber3 = lotteryNumber3 - 65;
+                }
 
                 lotteryNumber4 = 42;
 
                 lotteryNumber5 = rand.nextInt(50) + 1 - randomNumber;
+                if (lotteryNumber5 > 65){
+                    lotteryNumber5 = lotteryNumber5 - 65;
+                }
 
                 System.out.println("Here are the lottery numbers: " + lotteryNumber1 + ", " + lotteryNumber2 + ", " + lotteryNumber3 + ", " + lotteryNumber4 + ", " + lotteryNumber5 + " Magic Ball: " + magicBall);
 
