@@ -33,7 +33,7 @@ public class JavaControlFlow {
                 System.out.println("Do you have a red car? yes or no");
                 redCar = scanner.next();
 
-                while (!redCar.equalsIgnoreCase("yes") || redCar.equalsIgnoreCase("no"))
+                while (!redCar.equalsIgnoreCase("yes") || !redCar.equalsIgnoreCase("no"))
                 {
                     System.out.println("Please enter yes or no: ");
                     redCar = scanner.next();
