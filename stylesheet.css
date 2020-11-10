@@ -1,0 +1,13 @@
+#head{
+    background-color: yellowgreen;
+}
+
+#title{
+    color: brown;
+}
+
+#main{
+    margin: 50px;
+    border-style: dashed;
+
+}
